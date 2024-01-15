@@ -45,7 +45,25 @@
               value="{{ info_perfil_session[0]['apellido_usuario'] }}"
               />
           </div>
-          <div>
+          <div class="mb-3">
+            <label for="Ecivil" class="form-label">Ecivil</label>
+            <input
+              class="form-control"
+              type="text"
+              name="Ecivil"
+              value="{{ info_perfil_session[0]['Ecivil'] }}"
+              />
+          </div>
+            <div class="mb-3">
+              <label for="direccion" class="form-label">direccion</label>
+              <input
+                class="form-control"
+                type="text"
+                name="direccion"
+                value="{{ info_perfil_session[0]['direccion'] }}"
+                />
+            </div>
+            <div>
             <label for="area" class="form-label">Area</label>
             <select class="form-select" name="selectArea" {%if dataLogin.rol == 2 %} disabled {%endif%}>
               {% for area in areas%}
