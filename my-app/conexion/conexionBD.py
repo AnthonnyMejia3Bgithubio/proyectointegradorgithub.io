@@ -15,7 +15,7 @@ def connectionBD():
             user="root",
             passwd="b24AC5G6ahH15B4CaFHEaCgeDfbhE2b6",
                 #passwd="-D2eD6aDb5Bg6dEbhAAeBB6gd3EheaBg",
-            database=" railway",
+            database="railway",
                 #database="crud_python",
             charset='utf8mb4',
             collation='utf8mb4_unicode_ci',

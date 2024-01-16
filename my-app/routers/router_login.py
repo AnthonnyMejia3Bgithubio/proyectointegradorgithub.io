@@ -56,11 +56,9 @@ def cpanelRegisterUserBD():
         id_area = request.form['selectArea']
         id_rol = request.form['selectRol']
         pass_user = request.form['pass_user']
-        Ecivil = request.form['Ecivil']
-        direccion =request.form['direccion']
 
         resultData = recibeInsertRegisterUser(
-            cedula, name, surname, id_area,id_rol,pass_user,Ecivil,direccion)
+            cedula, name, surname, id_area,id_rol,pass_user)
         if (resultData != 0):
             flash('la cuenta fue creada correctamente.', 'success')
             return redirect(url_for('inicio'))

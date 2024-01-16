@@ -25,8 +25,6 @@
             <th>Nombre</th>
             <th>Área</th>
             <th>Rol</th>
-            <td>Ecivil</td> 
-            <td>direccion</td> 
             <th>Acciones</th>
           </tr>
         </thead>
@@ -35,7 +33,6 @@
           <tr>
             <td>{{ usuario.cedula}}</td>
             <td>{{ usuario.nombre_usuario}} {{usuario.apellido_usuario}}</td> 
-
             <td>
               {%for area in areas%}
               {%if area.id_area == usuario.id_area%}
@@ -50,8 +47,6 @@
               {%endif%}
               {%endfor%}
             </td>
-            <td>{{ usuario.Ecivil}} </td> 
-            <td>{{ usuario.direccion}} </td> 
             <td>
               <a
                   href="/mi-perfil/{{usuario.id_usuario}}"
